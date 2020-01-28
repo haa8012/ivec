@@ -2,11 +2,10 @@ import React, { Fragment, useState, useEffect } from 'react';
 import ImageToVec from './ImageToVec';
 import ColorPicker from './ColorPicker';
 import loadIcon from './loading.gif';
-import ReactCompareImage from 'react-compare-image';
+// import ReactCompareImage from 'react-compare-image';
 import palette from 'image-palette';
 import pixels from 'image-pixels';
 import exchange from './exchange.svg';
-import { TwitterIcon } from 'react-share';
 
 const FileUpload = () => {
   const [filename, setFilename] = useState('');
@@ -253,11 +252,11 @@ const FileUpload = () => {
                 console.log('rendering...,...');
               }}
             >
-              <ReactCompareImage
+              {/* <ReactCompareImage
                 leftImage={svg}
                 rightImage={fileURL}
                 id='result'
-              />
+              /> */}
             </div>
             <div
               style={{
@@ -267,9 +266,7 @@ const FileUpload = () => {
                 height: 50,
                 display: 'inline'
               }}
-            >
-              <TwitterIcon size={32} round={true} />
-            </div>
+            ></div>
           </div>
         </div>
       ) : null}
