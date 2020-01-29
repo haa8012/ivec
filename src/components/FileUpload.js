@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import ImageToVec from './ImageToVec';
 import ColorPicker from './ColorPicker';
 import loadIcon from './loading.gif';
-// import ReactCompareImage from 'react-compare-image';
+import ReactCompareImage from 'react-compare-image';
 import palette from 'image-palette';
 import pixels from 'image-pixels';
 import exchange from './exchange.svg';
@@ -26,10 +26,10 @@ const FileUpload = () => {
     b: 255,
     a: 1
   });
-  //   const [svg, setSVG] = useState(null);
+  const [svg, setSVG] = useState(null);
   const [rendering, setRendering] = useState(false);
 
-  //   useEffect(() => {}, [rendering]);
+  useEffect(() => {}, [rendering]);
 
   //   const resizeImage = async img => {
   //     const image = await jimp.read(img);
@@ -238,18 +238,18 @@ const FileUpload = () => {
               threshold={+threshold}
               background={valueBack}
               color={valueColor}
-              //   setSVG={setSVG}
+              setSVG={setSVG}
             />
             <div
               onLoad={e => {
                 setRendering(false);
               }}
             >
-              {/* <ReactCompareImage
+              <ReactCompareImage
                 leftImage={svg}
                 rightImage={fileURL}
                 id='result'
-              /> */}
+              />
             </div>
             <div
               style={{
