@@ -2,6 +2,7 @@
   "name": "ivec",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://haa8012.github.io/ivec",
   "dependencies": {
     "downloadjs": "^1.4.7",
     "html-to-image": "^0.1.1",
