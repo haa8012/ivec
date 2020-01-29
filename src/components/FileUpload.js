@@ -19,9 +19,14 @@ const FileUpload = () => {
     a: 1
   });
   const [loaded, setLoaded] = useState(false);
-  const [valueBackRGB, setBackValueRGB] = useState();
-  const [valueColorRGB, setColorValueRGB] = useState();
-  const [svg, setSVG] = useState(null);
+  const [valueBackRGB, setBackValueRGB] = useState({ r: 0, g: 0, b: 0, a: 1 });
+  const [valueColorRGB, setColorValueRGB] = useState({
+    r: 255,
+    g: 255,
+    b: 255,
+    a: 1
+  });
+  //   const [svg, setSVG] = useState(null);
   const [rendering, setRendering] = useState(false);
 
   useEffect(() => {
@@ -244,7 +249,7 @@ const FileUpload = () => {
               threshold={+threshold}
               background={valueBack}
               color={valueColor}
-              setSVG={setSVG}
+              //   setSVG={setSVG}
             />
             <div
               onLoad={e => {
