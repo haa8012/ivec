@@ -29,9 +29,7 @@ const FileUpload = () => {
   //   const [svg, setSVG] = useState(null);
   const [rendering, setRendering] = useState(false);
 
-  useEffect(() => {
-    console.log('rendering: ', rendering);
-  }, [rendering]);
+  //   useEffect(() => {}, [rendering]);
 
   //   const resizeImage = async img => {
   //     const image = await jimp.read(img);
@@ -62,10 +60,6 @@ const FileUpload = () => {
         return hex.length === 1 ? '0' + hex : hex;
       })
       .join('');
-
-  const onClick = async e => {
-    console.log('clicked...');
-  };
 
   const onChange = async e => {
     if (e.target.files[0]) {
@@ -125,12 +119,7 @@ const FileUpload = () => {
             </div>
           </div>
 
-          <input
-            id='file-upload'
-            type='file'
-            onChange={onChange}
-            onClick={onClick}
-          ></input>
+          <input id='file-upload' type='file' onChange={onChange}></input>
         </label>
 
         <div style={{ color: '#646c7f', fontSize: 12 }}>{filename}</div>
@@ -254,7 +243,6 @@ const FileUpload = () => {
             <div
               onLoad={e => {
                 setRendering(false);
-                console.log('rendering...,...');
               }}
             >
               {/* <ReactCompareImage
