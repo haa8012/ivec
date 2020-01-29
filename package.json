@@ -5,6 +5,7 @@
   "homepage": "http://haa8012.github.io/ivec",
   "dependencies": {
     "downloadjs": "^1.4.7",
+    "gh-pages": "^2.2.0",
     "html-to-image": "^0.1.1",
     "image-palette": "^2.1.0",
     "image-pixels": "^2.2.2",
