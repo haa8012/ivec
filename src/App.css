@@ -2,37 +2,42 @@ body {
   /* background: #e7e7e7; */
   font-family: Arial, Helvetica, Sans-serif;
   text-align: center;
-  padding: 5px;
   margin: 0;
   font-size: 1rem;
 }
 .navbar {
-  min-height: 40px;
-  width: 95%;
-  background: #f8f8f8;
-  border-bottom: 1px solid rgb(221, 221, 221);
-  color: rgb(54, 54, 54);
+  /* min-height: 30px; */
+  height: 40px;
+  width: auto;
+  /* background: #f8f8f8; */
+  /* color: rgb(54, 54, 54); */
+
+  background: #f67a00;
+  color: white;
+
+  /* border-bottom: 1px solid rgb(221, 221, 221); */
   font-size: 1em;
   font-weight: bold;
-  padding: 7px;
   position: sticky;
   top: 0px;
-  width: 100%;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   z-index: 5;
 }
 .container {
   width: auto;
-  padding-right: 12%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  /* padding-right: 12%; */
 }
 .sub-container {
   /* #cfe8fc; */
   background: #f8f8f8;
-  width: 100%;
+  width: auto;
   /* margin: auto; */
   margin: 10px 0px 10px 0px;
   /* text-align: center; */
-  padding: 20px;
+  padding: 10px;
   border: 1px solid rgb(230, 230, 230);
   border-bottom: 1px solid rgb(190, 190, 190);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
@@ -46,10 +51,14 @@ body {
 
 .header {
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   color: rgb(54, 54, 54);
-  padding: 10px;
+  padding: 5px;
+}
+.sep {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 /* img{
     width: 100%;
@@ -63,7 +72,7 @@ body {
 }
 
 input[type='file'] {
-  /* display: none; */
+  display: none;
 
   /* background: transparent; */
   height: auto;
@@ -158,7 +167,7 @@ label {
   min-height: 70px;
   height: auto;
   width: auto;
-  margin: 20px;
+  margin: 10px;
   text-align: center;
   color: #646c7f;
 }

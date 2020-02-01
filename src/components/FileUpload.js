@@ -72,7 +72,7 @@ const FileUpload = () => {
 
       if (imgSize > 3) {
         const file = await skaler(e.target.files[0], {
-          scale: 0.7 / Math.log(25)
+          scale: 1 / Math.log(20)
         });
         console.log(URL.createObjectURL(file));
 
@@ -112,190 +112,172 @@ const FileUpload = () => {
 
   return (
     <Fragment>
-      <Collapse accordion={true}>
-        <Panel
-          header='Upload file'
-          headerClass='my-header-class'
-          onClick={e => {
-            console.log('panel changed...', e);
-          }}
-        >
-          {/* <div className='sub-container'> */}
-          {/* <div className='header'>Upload File </div> */}
+      <div className='sub-container'>
+        {/* <div className='header'>Upload File </div> */}
 
-          <label for='file-upload' class='custom-file-upload'>
-            <div
+        <label for='file-upload' class='custom-file-upload'>
+          <div
+          //   {
+          //     //   background: 'transparent',
+          //     //   position: 'absolute',
+          //     //   top: 200,
+          //     //   left: '50%',
+          //     //   margin: 'auto',
+          //     //   textAlign: 'center',
+          //     //   transform: 'translate(-50%, -50%)'
+          //   }
+          >
+            <i
+              class='fa fa-cloud-upload'
               style={{
-                background: 'transparent',
-                //   position: 'absolute',
-                //   top: 200,
-                left: '50%',
-                margin: 'auto',
-                textAlign: 'center',
-                transform: 'translate(-50%, -50%)'
+                fontSize: 40,
+                color: '#ccc',
+                paddingRight: 10
               }}
-            >
-              <i
-                class='fa fa-cloud-upload'
-                style={{ fontSize: 40, color: '#ccc', paddingRight: 10 }}
-              ></i>
-              <div style={{ marginRight: 20 }}>
-                Drop image here or click to upload
-              </div>
-            </div>
+            ></i>
+            <div style={{ marginRight: 0 }}>Click here to upload file</div>
+          </div>
 
-            <input id='file-upload' type='file' onChange={onChange}></input>
-          </label>
+          <input id='file-upload' type='file' onChange={onChange}></input>
+        </label>
 
-          <div style={{ color: '#646c7f', fontSize: 12 }}>{filename}</div>
-          {/* </div> */}
-        </Panel>
-        <Panel header='Preview'>
-          {loaded ? (
-            <div id='workArea'>
-              <div
-                className='sub-container'
-                style={{ display: fileURL ? 'block' : 'none' }}
-              >
-                <div className='header'>Settings </div>
-                <div className=''>
-                  <div className='settings'>
-                    <div className='set-elm'>
-                      <label for='background'>Background </label>
+        <div style={{ color: '#646c7f', fontSize: 12 }}>{filename}</div>
+      </div>
+      {loaded ? (
+        <div id='workArea'>
+          <div
+            className='sub-container'
+            style={{ display: fileURL ? 'block' : 'none' }}
+          >
+            <div className='header sep'>Preview </div>
 
-                      <ColorPicker
-                        setBackValue={setBackValue}
-                        val={1}
-                        initColor={valueBackRGB}
-                      />
+            <div className=''>
+              <div className='settings'>
+                <div className='set-elm'>
+                  <label for='background'>Background </label>
 
-                      <div
-                        onClick={() => {
-                          setBackValue(valueColor);
-                          setColorValue(valueBack);
-                          setColorValueRGB(hexToRgbA(valueBack));
-                          setBackValueRGB(hexToRgbA(valueColor));
-                        }}
-                        style={{
-                          width: 20,
-                          height: 10,
-                          alignSelf: 'flex-start',
-                          marginLeft: 50
-                        }}
-                      >
-                        <img
-                          src={exchange}
-                          style={{ background: 'gery' }}
-                          alt=''
-                        />
-                      </div>
-                      <label for='color'>Color </label>
-                      <ColorPicker
-                        setColorValue={setColorValue}
-                        val={2}
-                        initColor={valueColorRGB}
-                      />
-                    </div>
+                  <ColorPicker
+                    setBackValue={setBackValue}
+                    val={1}
+                    initColor={valueBackRGB}
+                  />
 
-                    <div className='set-elm'>
-                      <label for='threshold'>Threshold </label>
-                      <div
-                        style={{
-                          // borderBottom: 'none',
-                          background: `linear-gradient(to left, ${valueColor}, ${valueBack})`,
-                          borderRadius: 15,
-                          width: '100%',
-                          display: 'flex',
-                          alignSelf: 'flex-end',
-                          border: '1px solid #7E7E7E'
-                        }}
-                      >
-                        <input
-                          type='range'
-                          id='customRange'
-                          min={0}
-                          max={255}
-                          style={{ width: '100%', height: 15 }}
-                          defaultValue={threshold}
-                          onChange={e => {
-                            setThreshold(e.target.value);
-                          }}
-                        />
-                      </div>
-                      <input
-                        className='input'
-                        id='threshold'
-                        name='threshold'
-                        type={Number}
-                        min={0}
-                        max={255}
-                        style={{ width: 40 }}
-                        value={threshold}
-                        onChange={e => {
-                          if (+e.target.value > 255) {
-                            setThreshold(255);
-                            return;
-                          }
-                          setThreshold(e.target.value);
-                        }}
-                      />
-                    </div>
+                  <div
+                    onClick={() => {
+                      setBackValue(valueColor);
+                      setColorValue(valueBack);
+                      setColorValueRGB(hexToRgbA(valueBack));
+                      setBackValueRGB(hexToRgbA(valueColor));
+                    }}
+                    style={{
+                      width: 20,
+                      height: 10,
+                      alignSelf: 'flex-start',
+                      marginLeft: 50
+                    }}
+                  >
+                    <img src={exchange} style={{ background: 'gery' }} alt='' />
                   </div>
-                </div>
-              </div>
-              <div
-                className='sub-container'
-                style={{ display: fileURL ? 'block' : 'none' }}
-              >
-                <div className='header'>Preview</div>
-                <img
-                  id='load'
-                  alt=''
-                  src={loadIcon}
-                  style={{
-                    display: rendering ? 'block' : 'none',
-                    width: 180,
-                    height: 150,
-                    // position: 'fixed',
-                    // top: 300,
-                    margin: 'auto',
-                    textAlign: 'center',
-                    zIndex: 2
-                  }}
-                />
-
-                <ImageToVec
-                  fileURL={fileURL}
-                  threshold={+threshold}
-                  background={valueBack}
-                  color={valueColor}
-                  setSVG={setSVG}
-                />
-                <div
-                  onLoad={e => {
-                    setRendering(false);
-                  }}
-                >
-                  <ReactCompareImage
-                    leftImage={svg}
-                    rightImage={fileURL}
-                    id='result'
+                  <label for='color'>Color </label>
+                  <ColorPicker
+                    setColorValue={setColorValue}
+                    val={2}
+                    initColor={valueColorRGB}
                   />
                 </div>
-                <div
-                  style={{
-                    paddingTop: 50,
-                    float: 'right',
-                    zIndex: 2,
-                    height: 50,
-                    display: 'inline'
-                  }}
-                ></div>
+
+                <div className='set-elm'>
+                  <label for='threshold'>Threshold </label>
+                  <div
+                    style={{
+                      // borderBottom: 'none',
+                      background: `linear-gradient(to left, ${valueColor}, ${valueBack})`,
+                      borderRadius: 15,
+                      width: '100%',
+                      display: 'flex',
+                      alignSelf: 'flex-end',
+                      border: '1px solid #7E7E7E'
+                    }}
+                  >
+                    <input
+                      type='range'
+                      id='customRange'
+                      min={0}
+                      max={255}
+                      style={{ width: '100%', height: 15 }}
+                      defaultValue={threshold}
+                      onChange={e => {
+                        setThreshold(e.target.value);
+                      }}
+                    />
+                  </div>
+                  <input
+                    className='input'
+                    id='threshold'
+                    name='threshold'
+                    type={Number}
+                    min={0}
+                    max={255}
+                    style={{ width: 40 }}
+                    value={threshold}
+                    onChange={e => {
+                      if (+e.target.value > 255) {
+                        setThreshold(255);
+                        return;
+                      }
+                      setThreshold(e.target.value);
+                    }}
+                  />
+                </div>
               </div>
             </div>
-          ) : null}
-        </Panel>
-      </Collapse>
+
+            <img
+              id='load'
+              alt=''
+              src={loadIcon}
+              style={{
+                display: rendering ? 'block' : 'none',
+                width: 180,
+                height: 150,
+                position: 'fixed',
+                top: 300,
+                margin: 'auto',
+                textAlign: 'center',
+                zIndex: 2
+              }}
+            />
+            <div className='sep'></div>
+            <ImageToVec
+              fileURL={fileURL}
+              threshold={+threshold}
+              background={valueBack}
+              color={valueColor}
+              setSVG={setSVG}
+            />
+            <div
+              onLoad={e => {
+                setRendering(false);
+              }}
+            >
+              <ReactCompareImage
+                leftImage={svg}
+                rightImage={fileURL}
+                id='result'
+              />
+            </div>
+            <div
+              style={{
+                paddingTop: 50,
+                float: 'right',
+                zIndex: 2,
+                height: 50,
+                display: 'inline'
+              }}
+            ></div>
+          </div>
+        </div>
+      ) : null}
       <footer style={{ height: 50 }}></footer>
     </Fragment>
   );
