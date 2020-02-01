@@ -23,7 +23,7 @@ body {
 }
 .container {
   width: auto;
-  padding: 0px 50px 0px 60px;
+  padding-right: 12%;
 }
 .sub-container {
   /* #cfe8fc; */

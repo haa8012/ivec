@@ -10,12 +10,14 @@
     "image-palette": "^2.1.0",
     "image-pixels": "^2.2.2",
     "potrace": "^2.1.2",
+    "rc-collapse": "^1.11.8",
     "react": "^16.12.0",
     "react-color": "^2.18.0",
     "react-compare-image": "^2.0.4",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
     "reactcss": "^1.2.3",
+    "skaler": "^1.0.6",
     "svg-to-dataurl": "^1.0.0"
   },
   "scripts": {
