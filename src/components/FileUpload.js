@@ -72,9 +72,9 @@ const FileUpload = () => {
 
       if (imgSize > 3) {
         const file = await skaler(e.target.files[0], {
-          scale: 1 / Math.log(20)
+          scale: 0.5 / Math.log(imgSize)
         });
-        console.log(URL.createObjectURL(file));
+        console.log(0.5 / Math.log(imgSize));
 
         setFileURL(URL.createObjectURL(file));
         pixel = await pixels(URL.createObjectURL(file));
