@@ -8,6 +8,7 @@ import pixels from 'image-pixels';
 import exchange from './exchange.svg';
 import 'rc-collapse/assets/index.css';
 import Collapse, { Panel } from 'rc-collapse';
+
 import skaler from 'skaler';
 
 const FileUpload = () => {

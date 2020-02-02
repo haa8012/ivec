@@ -56,7 +56,7 @@ const ImageToVec = ({ fileURL, threshold, background, color, setSVG }) => {
       <div>
         <div
           class='dropdown'
-          style={{ background: background, float: 'right', zIndex: 2 }}
+          style={{ background: background, float: 'right', zIndex: 1 }}
         >
           <button class='dropbtn'>
             Download {}
