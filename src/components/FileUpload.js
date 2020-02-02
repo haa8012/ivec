@@ -8,8 +8,11 @@ import pixels from 'image-pixels';
 import exchange from './exchange.svg';
 import 'rc-collapse/assets/index.css';
 import Collapse, { Panel } from 'rc-collapse';
-
 import skaler from 'skaler';
+import ImageGallery from './ImageGallery';
+
+// you can also use react-image-file-resizer which is light weight and does the same job
+//https://www.npmjs.com/package/react-image-file-resizer
 
 const FileUpload = () => {
   const [filename, setFilename] = useState('');
@@ -56,6 +59,7 @@ const FileUpload = () => {
     }
     throw new Error('Bad Hex');
   };
+
   const rgbToHex = (r, g, b) =>
     '#' +
     [r, g, b]
@@ -279,6 +283,15 @@ const FileUpload = () => {
           </div>
         </div>
       ) : null}
+      <div className='sub-container'>
+        <div className='header'> Gallery</div>
+        {/* <div styl={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}> </div>*/}
+        {/* {imgs} */}
+        <div id='gallery'> </div>
+
+        <ImageGallery onLoand={console.log('loading images...')}></ImageGallery>
+      </div>
+
       <footer style={{ height: 50 }}></footer>
     </Fragment>
   );
