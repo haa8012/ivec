@@ -289,7 +289,7 @@ const FileUpload = () => {
         {/* {imgs} */}
         <div id='gallery'> </div>
 
-        <ImageGallery onLoand={console.log('loading images...')}></ImageGallery>
+        <ImageGallery colNum={4}></ImageGallery>
       </div>
 
       <footer style={{ height: 50 }}></footer>
