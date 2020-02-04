@@ -22,7 +22,9 @@ const ImageToVec = ({ fileURL, threshold, background, color, setSVG }) => {
 
     setSVG(svgToDataURL(trace.getSVG()));
 
-    fs.writeFile('/static/media/', svgToDataURL(trace.getSVG()), function(err) {
+    fs.writeFile('/ivec/static/media/', svgToDataURL(trace.getSVG()), function(
+      err
+    ) {
       if (err) {
         return console.log(err);
       }
