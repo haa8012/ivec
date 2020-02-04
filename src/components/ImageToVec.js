@@ -22,14 +22,14 @@ const ImageToVec = ({ fileURL, threshold, background, color, setSVG }) => {
 
     setSVG(svgToDataURL(trace.getSVG()));
 
-    fs.writeFile('/ivec/static/media/', svgToDataURL(trace.getSVG()), function(
-      err
-    ) {
-      if (err) {
-        return console.log(err);
-      }
-      console.log('The file was saved!');
-    });
+    // fs.writeFile('/ivec/static/media/', svgToDataURL(trace.getSVG()), function(
+    //   err
+    // ) {
+    //   if (err) {
+    //     return console.log(err);
+    //   }
+    //   console.log('The file was saved!');
+    // });
   });
 
   const saveImage = async format => {
