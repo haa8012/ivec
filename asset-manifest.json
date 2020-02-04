@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ivec/static/css/main.297a6306.chunk.css",
-    "main.js": "/ivec/static/js/main.4769c5e5.chunk.js",
-    "main.js.map": "/ivec/static/js/main.4769c5e5.chunk.js.map",
+    "main.js": "/ivec/static/js/main.146b52b1.chunk.js",
+    "main.js.map": "/ivec/static/js/main.146b52b1.chunk.js.map",
     "runtime-main.js": "/ivec/static/js/runtime-main.377e6c22.js",
     "runtime-main.js.map": "/ivec/static/js/runtime-main.377e6c22.js.map",
     "static/css/2.271cc0b6.chunk.css": "/ivec/static/css/2.271cc0b6.chunk.css",
     "static/js/2.7b66283e.chunk.js": "/ivec/static/js/2.7b66283e.chunk.js",
     "static/js/2.7b66283e.chunk.js.map": "/ivec/static/js/2.7b66283e.chunk.js.map",
     "index.html": "/ivec/index.html",
-    "precache-manifest.92ddf1a8fb051f0e2377a96981481cd5.js": "/ivec/precache-manifest.92ddf1a8fb051f0e2377a96981481cd5.js",
+    "precache-manifest.ca718d9ef1337743884b28dc17e16150.js": "/ivec/precache-manifest.ca718d9ef1337743884b28dc17e16150.js",
     "service-worker.js": "/ivec/service-worker.js",
     "static/css/2.271cc0b6.chunk.css.map": "/ivec/static/css/2.271cc0b6.chunk.css.map",
     "static/css/main.297a6306.chunk.css.map": "/ivec/static/css/main.297a6306.chunk.css.map",
@@ -45,6 +45,6 @@
     "static/css/2.271cc0b6.chunk.css",
     "static/js/2.7b66283e.chunk.js",
     "static/css/main.297a6306.chunk.css",
-    "static/js/main.4769c5e5.chunk.js"
+    "static/js/main.146b52b1.chunk.js"
   ]
 }
