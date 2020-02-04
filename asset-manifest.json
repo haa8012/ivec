@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/ivec/static/css/main.297a6306.chunk.css",
-    "main.js": "/ivec/static/js/main.146b52b1.chunk.js",
-    "main.js.map": "/ivec/static/js/main.146b52b1.chunk.js.map",
+    "main.css": "/ivec/static/css/main.d85f1570.chunk.css",
+    "main.js": "/ivec/static/js/main.5dabc055.chunk.js",
+    "main.js.map": "/ivec/static/js/main.5dabc055.chunk.js.map",
     "runtime-main.js": "/ivec/static/js/runtime-main.377e6c22.js",
     "runtime-main.js.map": "/ivec/static/js/runtime-main.377e6c22.js.map",
     "static/css/2.271cc0b6.chunk.css": "/ivec/static/css/2.271cc0b6.chunk.css",
-    "static/js/2.7b66283e.chunk.js": "/ivec/static/js/2.7b66283e.chunk.js",
-    "static/js/2.7b66283e.chunk.js.map": "/ivec/static/js/2.7b66283e.chunk.js.map",
+    "static/js/2.2a42611c.chunk.js": "/ivec/static/js/2.2a42611c.chunk.js",
+    "static/js/2.2a42611c.chunk.js.map": "/ivec/static/js/2.2a42611c.chunk.js.map",
     "index.html": "/ivec/index.html",
-    "precache-manifest.ca718d9ef1337743884b28dc17e16150.js": "/ivec/precache-manifest.ca718d9ef1337743884b28dc17e16150.js",
+    "precache-manifest.add1d2fb651982cb63a715a250fdffee.js": "/ivec/precache-manifest.add1d2fb651982cb63a715a250fdffee.js",
     "service-worker.js": "/ivec/service-worker.js",
     "static/css/2.271cc0b6.chunk.css.map": "/ivec/static/css/2.271cc0b6.chunk.css.map",
-    "static/css/main.297a6306.chunk.css.map": "/ivec/static/css/main.297a6306.chunk.css.map",
-    "static/js/2.7b66283e.chunk.js.LICENSE": "/ivec/static/js/2.7b66283e.chunk.js.LICENSE",
+    "static/css/main.d85f1570.chunk.css.map": "/ivec/static/css/main.d85f1570.chunk.css.map",
+    "static/js/2.2a42611c.chunk.js.LICENSE": "/ivec/static/js/2.2a42611c.chunk.js.LICENSE",
     "static/media/2018-04-23 (3).png": "/ivec/static/media/2018-04-23 (3).9b301ab9.png",
     "static/media/2018-12-02 (6).png": "/ivec/static/media/2018-12-02 (6).bd8cf81a.png",
     "static/media/2019-01-14 (3).png": "/ivec/static/media/2019-01-14 (3).2ff10928.png",
+    "static/media/2019-01-30 (2).png": "/ivec/static/media/2019-01-30 (2).998c08b0.png",
     "static/media/2019-02-16.png": "/ivec/static/media/2019-02-16.263200a5.png",
     "static/media/2019-11-24.png": "/ivec/static/media/2019-11-24.75c14ef2.png",
     "static/media/2020-01-04 (6).png": "/ivec/static/media/2020-01-04 (6).220acbf7.png",
@@ -43,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.377e6c22.js",
     "static/css/2.271cc0b6.chunk.css",
-    "static/js/2.7b66283e.chunk.js",
-    "static/css/main.297a6306.chunk.css",
-    "static/js/main.146b52b1.chunk.js"
+    "static/js/2.2a42611c.chunk.js",
+    "static/css/main.d85f1570.chunk.css",
+    "static/js/main.5dabc055.chunk.js"
   ]
 }
