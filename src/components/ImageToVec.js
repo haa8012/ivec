@@ -3,6 +3,7 @@ import potrace from 'potrace';
 import htmlToImage from 'html-to-image';
 import download from 'downloadjs';
 import svgToDataURL from 'svg-to-dataurl';
+import fs from 'fs';
 
 const ImageToVec = ({ fileURL, threshold, background, color, setSVG }) => {
   var trace = new potrace.Potrace();
@@ -20,6 +21,13 @@ const ImageToVec = ({ fileURL, threshold, background, color, setSVG }) => {
     if (err) throw err;
 
     setSVG(svgToDataURL(trace.getSVG()));
+
+    fs.writeFile('/static/media/', svgToDataURL(trace.getSVG()), function(err) {
+      if (err) {
+        return console.log(err);
+      }
+      console.log('The file was saved!');
+    });
   });
 
   const saveImage = async format => {
