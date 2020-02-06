@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "52611673b6c474b17ff891dd76b1ba2c",
+    "revision": "fcf501409c6e74ffb6509263fa9fe6db",
     "url": "/ivec/index.html"
   },
   {
-    "revision": "47b6413778f5b728a02c",
+    "revision": "49779c7d5fd4b326a44c",
     "url": "/ivec/static/css/2.271cc0b6.chunk.css"
   },
   {
-    "revision": "35092c4f6780ef02bf1b",
-    "url": "/ivec/static/css/main.d85f1570.chunk.css"
+    "revision": "91e723d327c2b522f9b5",
+    "url": "/ivec/static/css/main.eb398cef.chunk.css"
   },
   {
-    "revision": "47b6413778f5b728a02c",
-    "url": "/ivec/static/js/2.2a42611c.chunk.js"
+    "revision": "49779c7d5fd4b326a44c",
+    "url": "/ivec/static/js/2.ec453f74.chunk.js"
   },
   {
     "revision": "d96badb414e0f92dd7aa7fe6bd193759",
-    "url": "/ivec/static/js/2.2a42611c.chunk.js.LICENSE"
+    "url": "/ivec/static/js/2.ec453f74.chunk.js.LICENSE"
   },
   {
-    "revision": "35092c4f6780ef02bf1b",
-    "url": "/ivec/static/js/main.5dabc055.chunk.js"
+    "revision": "91e723d327c2b522f9b5",
+    "url": "/ivec/static/js/main.de033084.chunk.js"
   },
   {
     "revision": "87f9968ebdc23bdfc853",
@@ -66,6 +66,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3f67985bae1c3f54dbe6fbb36f7b680a",
     "url": "/ivec/static/media/2020-01-30 (7).3f67985b.png"
+  },
+  {
+    "revision": "4649d3677b94472c530e84b9a715fd8e",
+    "url": "/ivec/static/media/5a1f79c22467372494b31032018e681a--islamic-calligraphy-arabic-cal.4649d367.svg"
+  },
+  {
+    "revision": "8ee4c13638dcd4b199a95edf28c118cb",
+    "url": "/ivec/static/media/alekhlas.8ee4c136.svg"
   },
   {
     "revision": "952ab162764bdb818f9a03abaed32a80",
@@ -130,5 +138,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c8a3d930cf7aa07b7c7a44cb94405854",
     "url": "/ivec/static/media/image (9).c8a3d930.png"
+  },
+  {
+    "revision": "60ead72f4337b5edca8182d0342d6dac",
+    "url": "/ivec/static/media/svg.60ead72f.svg"
+  },
+  {
+    "revision": "d8781f17adee91b9d8dcd48bfd2ce87b",
+    "url": "/ivec/static/media/temp2.d8781f17.svg"
   }
 ]);
