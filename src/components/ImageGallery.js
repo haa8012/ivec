@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
-import reactCSS from 'reactcss';
-import { __esModule } from 'rc-collapse';
+import ModalImage from 'react-modal-image';
 
 function ImageGallery({ colNum }) {
   const importAll = r => {
@@ -11,23 +9,48 @@ function ImageGallery({ colNum }) {
   const getImgs = importAll(
     require.context('../images/', false, /\.(png|jpe?g|svg)$/)
   );
-  console.log(getImgs);
+  // console.log(getImgs);
 
+  // const imgs = getImgs.map(i => (
+  //   <div className='card'>
+  //     <img src={i} alt='' style={{ width: '100%' }} />
+  //     <div style={{ background: 'white', padding: '0.01em 16px' }}>
+  //       <p style={{ fontSize: '12px' }}>Photo</p>
+  //     </div>
+  //   </div>
+  // ));
+
+  // return <div className='cards'>{imgs}</div>;
+
+  //https://medium.com/@MilesOfRoses/css-image-gallery-for-pictures-with-different-aspect-ratios-a20ffecb75d5
+  // the best solution to create a good looking image grid
   const imgs = getImgs.map(i => (
-    <div className='card'>
-      <img src={i} alt='' style={{ width: '100%' }} />
-      <div style={{ background: 'white', padding: '0.01em 16px' }}>
-        <p style={{ fontSize: '12px' }}>Photo</p>
-      </div>
+    <div>
+      <ModalImage small={i} medium={i} showRotate={true} alt='' className='' />
+      {/* <img src={i} alt='' /> */}
     </div>
   ));
-  //     }
-  //   };
 
-  return <div className='cards'>{imgs}</div>;
+  return <div className='images-wrapper'>{imgs}</div>;
 }
 
 export default ImageGallery;
+
+{
+  /* <div style={{ position: 'relative', top: -35, display: 'block' }}>
+        <div
+          style={{
+            background: 'white',
+            width: 50,
+            height: 20,
+            marginBottom: 5,
+            marginLeft: 5,
+            opacity: 0.5
+          }}
+        ></div>
+        <div style={{ paddingLeft: 5, opacity: 1 }}>Photo...</div>
+      </div> */
+}
 
 // Old code
 
