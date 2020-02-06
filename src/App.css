@@ -356,6 +356,11 @@ input[type='range']::-webkit-slider-runnable-track {
   width: 100%;
   height: auto !important;
   margin-bottom: 10px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.images-wrapper img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .images-wrapper {
   display: inline-block;
