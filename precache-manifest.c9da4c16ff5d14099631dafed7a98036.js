@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1f30ea14801e9aff45fcbfadd17d96bf",
+    "revision": "58e5b9b2bb59a7952f3eb4e107158d96",
     "url": "/ivec/index.html"
   },
   {
-    "revision": "805de24fea76f2a17360",
+    "revision": "49779c7d5fd4b326a44c",
     "url": "/ivec/static/css/2.271cc0b6.chunk.css"
   },
   {
-    "revision": "eaa3e6ba378ebe3f26bb",
-    "url": "/ivec/static/css/main.02838b8e.chunk.css"
+    "revision": "36c6b49ca62b9c45b36e",
+    "url": "/ivec/static/css/main.19222896.chunk.css"
   },
   {
-    "revision": "805de24fea76f2a17360",
-    "url": "/ivec/static/js/2.79bce708.chunk.js"
+    "revision": "49779c7d5fd4b326a44c",
+    "url": "/ivec/static/js/2.ec453f74.chunk.js"
   },
   {
     "revision": "d96badb414e0f92dd7aa7fe6bd193759",
-    "url": "/ivec/static/js/2.79bce708.chunk.js.LICENSE"
+    "url": "/ivec/static/js/2.ec453f74.chunk.js.LICENSE"
   },
   {
-    "revision": "eaa3e6ba378ebe3f26bb",
-    "url": "/ivec/static/js/main.d93dacc7.chunk.js"
+    "revision": "36c6b49ca62b9c45b36e",
+    "url": "/ivec/static/js/main.f0c23eeb.chunk.js"
   },
   {
     "revision": "87f9968ebdc23bdfc853",
@@ -48,6 +48,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ivec/static/media/alkursi.455b744d.svg"
   },
   {
+    "revision": "2edbfc225d8e88eda6e7b91ab56854df",
+    "url": "/ivec/static/media/allahakbar.2edbfc22.svg"
+  },
+  {
     "revision": "158996e1abbc959bafb75dffa2671d2e",
     "url": "/ivec/static/media/besmellah.158996e1.svg"
   },
@@ -62,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e9038263cc3af4965d7ed2877c870211",
     "url": "/ivec/static/media/climing.e9038263.svg"
+  },
+  {
+    "revision": "a340e6ed3ad0d32ba9dd2c0f1a792783",
+    "url": "/ivec/static/media/dock.a340e6ed.svg"
   },
   {
     "revision": "90df0d7af79387e9e93fd0972269da6d",
@@ -84,8 +92,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ivec/static/media/horsemen.53f6b1b1.svg"
   },
   {
-    "revision": "b98bb4a12d79957f0c887a83f161166d",
-    "url": "/ivec/static/media/killBill.b98bb4a1.svg"
+    "revision": "f1cb99b28c381432cf28a201dd8c99c9",
+    "url": "/ivec/static/media/killBill.f1cb99b2.svg"
   },
   {
     "revision": "927c5dc9a525923ee21ca604797beea3",
