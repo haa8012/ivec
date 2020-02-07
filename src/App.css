@@ -350,13 +350,15 @@ input[type='range']::-webkit-slider-runnable-track {
   -moz-column-count: 5;
   -moz-column-gap: 0px;
   column-count: 5;
-  column-gap: 10px;
+  column-gap: 20px;
 }
 .images-wrapper img {
   width: 100%;
   height: auto !important;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .images-wrapper img:hover {
@@ -366,7 +368,7 @@ input[type='range']::-webkit-slider-runnable-track {
   display: inline-block;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 @media (max-width: 1400px) {
   .images-wrapper {
